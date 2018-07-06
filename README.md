@@ -27,8 +27,13 @@ log_group = "log_group_name"
 
 The terraform modules used inside require two more variables: `image_url` and `service_name`. However we haven't set that in the previous file because this sample does the job of setting up the ECR and uploading a docker image to the repository.
 
-The `deploy.sh` file is responsible for creating the ECR if it doesn't exist already and uploads a local docker image to the ECR. If you are using Docker Hub, then you'll need to modify the script accordingly.
+The `deploy.sh` file is responsible for creating the ECR if it doesn't exist already, re-tags the local docker image for uploading to the ECR and then uploads to the ECR. If you are using Docker Hub, then you'll need to modify the script accordingly.
 
+Run the `deploy.sh` with the environment variables set. For example,
+
+```bash
+SERVICE_NAME=nginx IMAGE=nginx IMAGE_TAG=1.13.0-alpine bash push_image.sh
+```
 
 ## Task Role and Policies
 
