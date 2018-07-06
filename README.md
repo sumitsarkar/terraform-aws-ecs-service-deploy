@@ -13,8 +13,8 @@ environment = "integration"
 vpc_id = "vpc-12345678"
 cluster_name = "testCluster"
 alb_listener_rule_arns = [
-  "arn:aws:elasticloadbalancing:eu-west-1:880016731919:listener/app/bkbn-test-external/ed28eb87d2aed3a7/8d3ccec655b5d49d",
-  "arn:aws:elasticloadbalancing:eu-west-1:880016731919:listener/app/bkbn-test-external/ed28eb87d2aed3a7/1d504add06f7fcc5"]
+  "arn:aws:elasticloadbalancing:eu-west-1:888888888888:listener/app/test-external/ed28eb87d2aed3a7/8d3ccec655b5d49d",
+  "arn:aws:elasticloadbalancing:eu-west-1:888888888888:listener/app/test-external/ed28eb87d2aed3a7/1d504add06f7fcc5"]
 rule_type = "path-pattern"
 rule_value = "/*"
 rule_priority = "10"
